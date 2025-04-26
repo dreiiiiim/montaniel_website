@@ -24,7 +24,7 @@ signInForm.addEventListener('submit', (e) => {
 
     if (user) {
         localStorage.setItem('currentUser', user.name);
-        window.location.href = 'home.html';
+        window.location.href = 'index.html';
     } else {
         alert('Invalid credentials. Please try again.');
     }
@@ -51,7 +51,7 @@ signUpForm.addEventListener('submit', (e) => {
     
     // Auto login after signup
     localStorage.setItem('currentUser', name);
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 });
 
 // Original carousel functionality
