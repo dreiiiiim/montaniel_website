@@ -1,0 +1,319 @@
+body {
+  background-color: #50220e;
+  margin: 0%;
+  padding: 0%;
+  
+  
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none; 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  max-height: 3rem;
+ 
+  
+  
+   
+}
+
+
+
+
+
+
+li a {
+
+   color: white;
+   block-size: auto;
+  text-decoration: none;
+  font-size: 1.7vh;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+
+
+.logo {
+  padding-top:  1.512rem;
+  width: 8.1rem;
+  
+}
+
+
+.signin {
+  width: 2.80rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+  opacity: 0.5;
+
+
+}
+
+
+.signin:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+
+
+
+
+
+
+.BAG {
+  width:100%;
+  max-width: 120vh;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+
+.wrapper {
+  
+
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 2em;
+  padding-bottom: 4em;
+  
+}
+
+.intro {
+  margin-right: 5em;
+  flex: 1;
+}
+
+.hrnav {
+border: none;
+height: 1px;
+/* Set the hr color */
+color: #663f2e;  /* old IE */
+background-color: #663f2e;  /* Modern Browsers */
+}
+
+.intro h1, p {
+font-family: "Inter", sans-serif;
+margin-left: 5em;
+text-align: right;
+color: rgb(212, 212, 212);
+/* font-size: 1.80em; */
+font-size: 3vh;
+
+}
+
+.intro h1 {
+font-size: 5vh;
+}
+
+
+.home_button {
+background-color: #ffffff; /* Green */
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+font-family: "Inter", sans-serif;
+display: inline-block;
+font-size: 1.60em;
+float: right;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+
+}
+
+.home_button:hover {
+background-color: rgba(212, 212, 212, 1);
+transform: scale(1.1);
+}
+
+
+
+
+
+.moreinfo {
+width: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 3em;
+background-color: #ffffff;
+}
+
+.hermes_men_img {
+  border-radius: 20px;
+  width: 80vh;
+  box-shadow: 
+  5px 15px 40px black;
+  
+  
+  ;
+width: 80vh;
+
+
+
+
+}
+
+.hermes_men_info {
+grid-column: 1;
+grid-row: 1;
+
+}
+
+
+
+.p2 {
+font-weight: bold;
+color: gray;
+font-size: 2vh;
+margin: 0%;
+line-height: 1.5em;
+font-family: "Inter", sans-serif;
+text-align: left;
+}
+
+.hermes_h1 {
+line-height: 1.5em;
+font-size:5.40vh;
+
+}
+
+
+
+.moreinfo h1,  .p_fit {
+
+color: black;
+font-family: "Inter", sans-serif;
+text-align: left;
+
+
+
+}
+
+.moreinfo {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+
+.hermes_men {
+
+
+padding-top: 2em;
+/* background-color: aqua; */
+display: flex; /* Enables flexbox */
+justify-content: center; /* Centers horizontally */
+align-items: center;
+
+}
+
+.hermes_men_info {
+padding-left: 5em;
+padding-top: 1em;
+}
+
+
+.hring {
+
+/* background-color: blue; */
+display: flex; /* Enables flexbox */
+justify-content: center; /* Centers horizontally */
+align-items: center;
+
+
+}
+
+
+.hring_img {
+width: 80vh;
+box-shadow: 
+5px 15px 40px black;
+border-radius: 20px;
+
+;
+}
+
+.hring_info {
+/* background-color: aquamarine; */
+padding-right: 5.5em;
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+
+
+}
+
+.hring_p2 {
+/* background-color: violet; */
+font-weight: bold;
+color: gray;
+font-size: 2vh;
+margin: 0%;
+line-height: 1.5em;
+font-family: "Inter", sans-serif;
+text-align: left;
+
+
+
+}
+
+.hring_h1 {
+
+  line-height: 1.5em;
+  font-size:5.40vh;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+
+  .moreinfo {
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  
+
+  .hring {
+    grid-row: 4;
+  }
+
+  .hring_info {
+   padding-left: 5.5em;
+   text-align: center;
+  }
+  
+  
+  
+  
+  
+  }
+  

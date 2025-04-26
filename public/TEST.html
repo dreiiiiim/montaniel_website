@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add to Cart Example</title>
+  <style>
+    .cart-icon {
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .cart-icon:hover {
+      color: black;
+    }
+
+    
+  </style>
+
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- SVG acting as an Add to Cart button -->
+  <svg onclick="addToCart({ id: 1, name: 'Sample Product' })"
+       class="h-6 w-6 fill-current text-gray-500 cart-icon"
+       xmlns="http://www.w3.org/2000/svg"
+       fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+       stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 4.5v15m7.5-7.5h-15" />
+  </svg>
+
+  <div id="cart-output" style="margin-top: 20px; font-family: sans-serif;"></div>
+
+
+<h2 class="bg-amber-900">helo</h2>
+
+
+  <script>
+    // Initialize an empty cart array
+    const cart = [];
+
+    function addToCart(item) {
+      cart.push(item);
+      document.getElementById("cart-output").innerText =
+        `Cart: ${cart.length} item(s)\n` + 
+        cart.map(i => `• ${i.name}`).join('\n');
+    }
+  </script>
+
+</body>
+</html>
